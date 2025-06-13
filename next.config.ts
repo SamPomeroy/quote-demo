@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const nextConfig = {
+  reactStrictMode: false,
+  async rewrites() {
+    return [
+      {
+        source: '/api/quote',
+        destination: 'http://localhost:5678/webhook/quote'
+      }
+    ]
+  }
+}
 
-export default nextConfig;
+module.exports = nextConfig;
