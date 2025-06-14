@@ -1,15 +1,17 @@
-/** @type {import('next').NextConfig} */
+// next.config.ts
+import type { NextConfig } from 'next'
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   reactStrictMode: false,
   async rewrites() {
     return [
       {
         source: '/api/quote',
-        destination: 'http://localhost:5678/webhook/quote'
-      }
+        destination:
+          'https://shannanoe.app.n8n.cloud/webhook/5d557473-f46d-4131-8144-437f0f3f0b06',
+      },
     ]
-  }
+  },
 }
 
-module.exports = nextConfig;
+export default nextConfig
