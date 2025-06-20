@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/snoep_a5dedf8/Desktop/job-scapper/jobScraper/client/src/app/page.tsx"],"sourcesContent":["import { createClient } from '@/utils/supabase/server'\nimport { cookies } from 'next/headers'\n\n\nexport default async function Home() {\n  const cookieStore = await cookies()\n  const supabase = createClient(cookieStore)\n  return (\n    \n    <>\n       <main className=\"flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 text-center\">\n      <h1 className=\"text-4xl font-bold text-indigo-700 mb-4\">\n        Tailwind is working!\n      </h1>\n      <p className=\"text-lg text-gray-600\">\n        If you see this styled layout, you're good to go 🚀\n      </p>\n    </main>\n\n\n    \n    </>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;AACA;;;;AAGe,eAAe;IAC5B,MAAM,cAAc,MAAM,CAAA,GAAA,+HAAA,CAAA,UAAO,AAAD;IAChC,MAAM,WAAW,aAAa;IAC9B,qBAEE;kBACG,cAAA,8OAAC;YAAK,WAAU;;8BACjB,8OAAC;oBAAG,WAAU;8BAA0C;;;;;;8BAGxD,8OAAC;oBAAE,WAAU;8BAAwB;;;;;;;;;;;;;AAS3C","debugId":null}}]
+}
